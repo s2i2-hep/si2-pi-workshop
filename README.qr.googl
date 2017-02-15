@@ -1,0 +1,17 @@
+
+
+  Hints on how to make a QR code (and shortened URL) for a web location:
+
+http://lifehacker.com/5511793/make-qr-codes-in-a-jiffy-with-googl
+
+I want to do this for our poster:
+
+   http://s2i2-hep.org/downloads/s2i2-hep-si2-pi-workshop-2017.pdf
+
+http://goo.gl/k22mD9
+
+So if I go to:
+
+http://goo.gl/k22mD9.qr
+
+I get a QR image that I can download.
