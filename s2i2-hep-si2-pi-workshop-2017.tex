@@ -2,7 +2,7 @@
 % http://tex.stackexchange.com/questions/56205/wrapfigure-beamer-style
 \usepackage{color}
 \usepackage{transparent}
-\usepackage{enumitem}
+%\usepackage{enumitem}
 %\usepackage{cutwin}
 %\usetheme{RJH}
 \usetheme{Berkeley}
@@ -18,7 +18,7 @@
 \definecolor{mybluelabel}{RGB}{48,174,228}
 
 % Turn off list indentation
-\setlist[itemize]{leftmargin=*}
+%\setlist[itemize]{leftmargin=*}
 
 \begin{document}
 \begin{frame}{} 
@@ -100,10 +100,8 @@ is the mechanism stabilizing the Higgs mass from enormous quantum
 corrections? Are neutrinos, whose only SM interactions are weak,
 their own anti-particles? Can the theories of gravity and quantum
 mechanics be reconciled? Planned and running HEP experiments 
-aim to answer these questions over the next 20 years. 
-XXXXX In addition to the large facilities (accelerators and large particle
-detectors), the computing and software challenges 
-are formidable. XXXX
+and facilities aim to answer these questions over the next 20 years. 
+The computing and software challenges of these projects are formidable. 
 The LHC experiments, for example, use nearly 0.5 Exabyte of
 storage today in 170 computer centers in 42 countries. 
 The upgrade to the High-Luminosity Large Hadron Collider (HL-LHC) will
@@ -130,36 +128,6 @@ by more than a factor of 100, with significantly increased data and detector com
 
 
 \begin{textblock}{38.0}(4,75)
-\begin{block}{S2I2-HEP and the HEP Software Foundation}
-Our S2I2-HEP strategic plan will describe how an NSF S2I2, and the U.S.\ university community, can provide leadership and enable the science of the HL-LHC era.
-HEP experiments involve international collaborations and a global software ecosystem, however, and the activities of a possible S2I2 for HEP would need to fit into a larger international context. To that end, we are also working with the HEP Software Foundation (HSF) to develop on the same time scale a ``Community White Paper'' (CWP) with a global roadmap for HEP Software and Computing R\&D for the 2020s. The aim of the CWP is to identify and prioritise the software research and development investments required:
-
-\begin{itemize}
-\item to achieve improvements in software efficiency, scalability and performance and to make use of the advances in CPU, storage and network technologies
-\item to enable new approaches to computing and software that could radically extend the physics reach of the detectors
-\item to ensure the long term sustainability of the software through the lifetime of the HL-LHC
-\end{itemize}
-
-Achieving consensus in a large international community is a complex task. We are modeling the CWP process on that used for the HEP ``decadal survey'' (Snowmass) process and using a mix of dedicated general and topical workshops, solicitations for topical white papers contributions and outreach sessions at pre-existing HEP meetings.
-\end{block}
-\end{textblock}
-
-
-
-
-\begin{textblock}{38.0}(44,60)
-\begin{block}{S2I2 HEP/CS workshop at NCSA, 7-9 Dec 2016}
-The first S2I2-HEP workshop focused on fostering collaboration between the HEP and Computer Science communities. There were 50 attendees, with about half from HEP and half from Computer Science.
-\begin{figure}[tbph]
-\centering
-\includegraphics[width=0.60\textwidth]{images/20161208-s2i2-hep-cs-group-photo.jpg}
-\end{figure}
-\small{Meeting agenda: \url{https://indico.cern.ch/event/575443/}} \\
-\small{Summary: \url{http://s2i2-hep.org/downloads/s2i2-hep-cs-workshop-summary.pdf}}
-\end{block}
-\end{textblock}
-
-\begin{textblock}{38.0}(44,75)
 \begin{block}{HSF Community White Paper Workshop at SDSC, 23-26 Jan 2017}
 This was the first CWP workshop, organized jointly by S2I2-HEP and the HEP Software Foundation (\url{http://hepsoftwarefoundation.org}). The aim of this workshop was to begin the CWP process, formulate charges and plans for the CWP working groups. It consisted of plenary sessions, parallels and topical panels with 120 attendees from HEP, Computer Science and Industry.
 \begin{figure}[tbph]
@@ -167,25 +135,28 @@ This was the first CWP workshop, organized jointly by S2I2-HEP and the HEP Softw
 \includegraphics[width=0.50\textwidth]{images/20170125-HSF-SDSC-Workshop-group-photo.jpg}
 \end{figure}
 Topics covered included simulation, data analysis and interpretation, event processing frameworks, workflow and resource management, triggering and reconstruction, data analytics and machine learning, data access and management, visualization, data and software preservation and software development, deployment and validation. \\
-\small{Meeting agenda: \url{http://indico.cern.ch/event/570249/}} \\
+{\small Meeting agenda: \url{http://indico.cern.ch/event/570249/}} \\
 
-\end{block}
-\end{textblock}
 
-\begin{textblock}{38.0}(44,25)
+
+\begin{textblock}{38.0}(44,82.5)
 \begin{block}{Future S2I2-HEP and HSF/CWP activities}
-To this end we are organizing a number of workshops between Fall 2016 and Summer 2017.
-We are planning additional CWP workshops are planned this year: \\
+Outreach/sessions will be taking place during the collaboration meetings
+of the large LHC and HEP experiments, as well as at large labs. We are also 
+planning several additional S2I2 and/or CWP workshops before 
+Summer 2017: \\
 \begin{itemize}
 \item 9 Mar, 2017 - Software Triggers and Event Reconstruction WG meeting
     \begin{itemize}
-    \item LAL (Orsay)
-    \item Session at the Connecting The Dots workshop (\url{https://ctdwit2017.lal.in2p3.fr})
+    \item LAL (Orsay), session at the Connecting The Dots workshop 
     \end{itemize}
 \item 20-22 Mar, 2017 - IML Topical Machine Learning Workshop
     \begin{itemize}
-    \item CERN
-    \item The workshop includes a CWP session on Machine Learning
+    \item CERN, will include a CWP session on Machine Learning
+    \end{itemize}
+\item Early May, 2017 - Second S2I2 HEP/CS workshop
+    \begin{itemize}
+    \item Princeton (TBC)
     \end{itemize}
 \item 22-24 May, 2017 - HEP Analysis Ecosystem Retreat
     \begin{itemize}
@@ -193,29 +164,67 @@ We are planning additional CWP workshops are planned this year: \\
     \end{itemize}
 \item 5-6 Jun, 2017 - CWP Event Processing Frameworks Workshop (TBC)
     \begin{itemize}
-    \item FNAL
-    \item The workshop is just prior to the FNAL 50th Anniversary and User Meeting
+    \item FNAL, just prior to the FNAL 50th Anniversary and User Meeting
     \end{itemize}
 \item 26-30 Jun, 2017 - HEP Software Foundation Workshop
     \begin{itemize}
-    \item LAPP (Annecy)
-    \item Final CWP workshop
+    \item LAPP (Annecy), Final CWP workshop
     \end{itemize}
 \end{itemize}
-In addition we are investigating the possibility of a 2nd S2I2 HEP/CS workshop in May at Princeton (TBC) and a possible S2I2-HEP meeting at the ACAT 2017 conference in Seattle the week of 21-25 Aug, 2017.
+In addition we are investigating the possibility of an S2I2-HEP ``writing'' meeting at the ACAT 2017 conference in Seattle the week of 21-25 Aug, 2017.
+~~~ \\
+The plan is to deliver the HSF Community White Paper document by the end of summer, 2017, and a final NSF S2I2-HEP strategic plan by the end of 2017.
+\end{block}
+\end{textblock}
+
+
+
+\begin{textblock}{38.0}(44,25)
+\begin{block}{S2I2-HEP and the HEP Software Foundation}
+Our S2I2-HEP strategic plan will describe how an NSF S2I2, and the
+U.S.\ university community, could provide leadership and enable the
+science of the HL-LHC era.  HEP experiments involve international
+collaborations and a global software ecosystem, however, and the
+activities of a possible S2I2 for HEP would need to fit into a
+larger international context. To that end, we are also working with
+the HEP Software Foundation (HSF) to develop on the same time scale
+a ``Community White Paper'' (CWP) with a global roadmap for HEP
+Software and Computing R\&D for the 2020s. The aim of the CWP is
+to identify and prioritise the software research and development
+investments required:
+
+\begin{itemize}
+\item to achieve improvements in software efficiency, scalability and performance and to make use of the advances in CPU, storage and network technologies
+\item to enable new approaches to computing and software that could radically extend the physics reach of the detectors
+\item to ensure the long term sustainability of the software through the lifetime of the HL-LHC
+\end{itemize}
+
+Achieving consensus in a large international community is a complex task. We are modeling the CWP process on that used for the HEP ``decadal survey'' (Snowmass) process and using a mix of dedicated general and topical workshops, solicitations for topical white papers contributions and outreach sessions at pre-existing HEP meetings. Most major HEP stakeholders (experiments, labs, institutions, software projects) are being engaged.
 \end{block}
 \end{textblock}
 
 
 
 
+\begin{textblock}{38.0}(44,63)
+\begin{block}{S2I2 HEP/CS workshop at NCSA, 7-9 Dec 2016}
+The first S2I2-HEP workshop focused on fostering collaboration between the HEP and Computer Science communities. There were 50 attendees, with about half from HEP and half from Computer Science.
+\begin{figure}[tbph]
+\centering
+\includegraphics[width=0.60\textwidth]{images/20161208-s2i2-hep-cs-group-photo.jpg}
+\end{figure}
+{\small Meeting agenda: \url{https://indico.cern.ch/event/575443/}} \\
+{\small Summary: \url{http://s2i2-hep.org/downloads/s2i2-hep-cs-workshop-summary.pdf}}
+\end{block}
+\end{textblock}
+
+\end{block}
+\end{textblock}
 
 
 
 
-
-
-\begin{textblock}{14.0}(4,109)
+\begin{textblock}{14.0}(4,107)
 \begin{block}{This poster online with links}
 \begin{figure}[tbph]
 \centering
@@ -228,7 +237,7 @@ In addition we are investigating the possibility of a 2nd S2I2 HEP/CS workshop i
 \end{textblock}
 
 
-\begin{textblock}{14.0}(20,109)
+\begin{textblock}{14.0}(20,107)
 \begin{block}{S2I2-HEP Project website}
 \begin{figure}[tbph]
 \centering
@@ -240,6 +249,14 @@ In addition we are investigating the possibility of a 2nd S2I2 HEP/CS workshop i
 \end{block}
 \end{textblock}
 
+\begin{textblock}{10.0}(34,107)
+%\begin{block}{This poster online with links}
+\begin{figure}[tbph]
+\centering
+\includegraphics[width=0.75\textwidth]{images/nsf1.jpg}
+\end{figure}
+%\end{block}
+\end{textblock}
 
 
 %\begin{textblock}{38.0}(44,109)
