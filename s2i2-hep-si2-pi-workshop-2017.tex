@@ -2,6 +2,7 @@
 % http://tex.stackexchange.com/questions/56205/wrapfigure-beamer-style
 \usepackage{color}
 \usepackage{transparent}
+\usepackage{enumitem}
 %\usepackage{cutwin}
 %\usetheme{RJH}
 \usetheme{Berkeley}
@@ -15,6 +16,9 @@
 %\definecolor{mybluelabel}{RGB}{145,201,219}
 % RGB (48,174,228), #30AEE4
 \definecolor{mybluelabel}{RGB}{48,174,228}
+
+% Turn off list indentation
+\setlist[itemize]{leftmargin=*}
 
 \begin{document}
 \begin{frame}{} 
@@ -70,13 +74,14 @@ Innovation Institute (S2I2) to develop software for experiments
 taking data in the ``High-Luminosity Large Hadron Collider'' (HL-LHC)
 era in the 2020s. In addition, we are working with the HEP Software
 Foundation to prepare a larger HEP Community White Paper (CWP)
-describing a global roadmap for HEP Software and Computing R\&D for
-the 2020s. To this end we are organizing a number of workshops
-between Fall 2016 and Summer 2017.
+with a global roadmap for HEP Software and Computing R\&D for
+the 2020s. 
+This project is supported by National Science Foundation grants ACI-1558216, ACI-1558219, and ACI-1558233. Any opinions, findings, conclusions or recommendations expressed in this material are those of the developers and do not necessarily reflect the views of the National Science Foundation.
+
 \end{block}
 \end{textblock}
 
-\begin{textblock}{38.0}(4,23.5)
+\begin{textblock}{38.0}(4,25)
 \begin{block}{High Energy Physics (HEP)}
 %\begin{center}
 The quest to understand the fundamental building blocks of nature,
@@ -125,10 +130,9 @@ by more than a factor of 100, with significantly increased data and detector com
 
 
 \begin{textblock}{38.0}(4,75)
-\begin{block}{The HEP Community and Software Ecosystem}
-HEP collaborations, US scientists/students involved in LHC, etc. (Additional text to fill in.)
-
-The aim of the CWP is  to identify and prioritise the software research and development investments required:
+\begin{block}{S2I2-HEP and the HEP Software Foundation}
+Our S2I2-HEP strategic plan will describe how an NSF S2I2, and the U.S.\ university community, can provide leadership and enable the science of the HL-LHC era.
+HEP experiments involve international collaborations and a global software ecosystem, however, and the activities of a possible S2I2 for HEP would need to fit into a larger international context. To that end, we are also working with the HEP Software Foundation (HSF) to develop on the same time scale a ``Community White Paper'' (CWP) with a global roadmap for HEP Software and Computing R\&D for the 2020s. The aim of the CWP is to identify and prioritise the software research and development investments required:
 
 \begin{itemize}
 \item to achieve improvements in software efficiency, scalability and performance and to make use of the advances in CPU, storage and network technologies
@@ -136,14 +140,14 @@ The aim of the CWP is  to identify and prioritise the software research and deve
 \item to ensure the long term sustainability of the software through the lifetime of the HL-LHC
 \end{itemize}
 
-
+Achieving consensus in a large international community is a complex task. We are modeling the CWP process on that used for the HEP ``decadal survey'' (Snowmass) process and using a mix of dedicated general and topical workshops, solicitations for topical white papers contributions and outreach sessions at pre-existing HEP meetings.
 \end{block}
 \end{textblock}
 
 
 
 
-\begin{textblock}{38.0}(44,23.5)
+\begin{textblock}{38.0}(44,60)
 \begin{block}{S2I2 HEP/CS workshop at NCSA, 7-9 Dec 2016}
 The first S2I2-HEP workshop focused on fostering collaboration between the HEP and Computer Science communities. There were 50 attendees, with about half from HEP and half from Computer Science.
 \begin{figure}[tbph]
@@ -155,7 +159,7 @@ The first S2I2-HEP workshop focused on fostering collaboration between the HEP a
 \end{block}
 \end{textblock}
 
-\begin{textblock}{38.0}(44,42)
+\begin{textblock}{38.0}(44,75)
 \begin{block}{HSF Community White Paper Workshop at SDSC, 23-26 Jan 2017}
 This was the first CWP workshop, organized jointly by S2I2-HEP and the HEP Software Foundation (\url{http://hepsoftwarefoundation.org}). The aim of this workshop was to begin the CWP process, formulate charges and plans for the CWP working groups. It consisted of plenary sessions, parallels and topical panels with 120 attendees from HEP, Computer Science and Industry.
 \begin{figure}[tbph]
@@ -168,27 +172,24 @@ Topics covered included simulation, data analysis and interpretation, event proc
 \end{block}
 \end{textblock}
 
-\begin{textblock}{38.0}(44,73)
+\begin{textblock}{38.0}(44,25)
 \begin{block}{Future S2I2-HEP and HSF/CWP activities}
+To this end we are organizing a number of workshops between Fall 2016 and Summer 2017.
 We are planning additional CWP workshops are planned this year: \\
 \begin{itemize}
 \item 9 Mar, 2017 - Software Triggers and Event Reconstruction WG meeting
     \begin{itemize}
     \item LAL (Orsay)
     \item Session at the Connecting The Dots workshop (\url{https://ctdwit2017.lal.in2p3.fr})
-    \item Indico page: \url{https://indico.cern.ch/event/614111/}
     \end{itemize}
 \item 20-22 Mar, 2017 - IML Topical Machine Learning Workshop
     \begin{itemize}
     \item CERN
     \item The workshop includes a CWP session on Machine Learning
-    \item Indico page: \url{https://indico.cern.ch/event/595059}
     \end{itemize}
 \item 22-24 May, 2017 - HEP Analysis Ecosystem Retreat
     \begin{itemize}
     \item Location TBD
-    \item Indico page: \url{http://indico.cern.ch/event/613842/}
-    \item Workshop proposal: \url{http://goo.gl/mbvAUT}
     \end{itemize}
 \item 5-6 Jun, 2017 - CWP Event Processing Frameworks Workshop (TBC)
     \begin{itemize}
@@ -199,7 +200,6 @@ We are planning additional CWP workshops are planned this year: \\
     \begin{itemize}
     \item LAPP (Annecy)
     \item Final CWP workshop
-    \item Indico page: \url{https://indico.cern.ch/event/613093/}
     \end{itemize}
 \end{itemize}
 In addition we are investigating the possibility of a 2nd S2I2 HEP/CS workshop in May at Princeton (TBC) and a possible S2I2-HEP meeting at the ACAT 2017 conference in Seattle the week of 21-25 Aug, 2017.
@@ -242,16 +242,10 @@ In addition we are investigating the possibility of a 2nd S2I2 HEP/CS workshop i
 
 
 
-\begin{textblock}{38.0}(44,109)
-\begin{block}{Acknowledgement}
-This project is supported by National Science Foundation grants ACI-1558216, ACI-1558219, and ACI-1558233. Any opinions, findings, conclusions or recommendations expressed in this material are those of the developers and do not necessarily reflect the views of the National Science Foundation. \\
-%~~\\
-%\begin{center}
-%Images \copyright~2009-2016 CERN (License: CC-BY-SA-4.0)
-%\end{center}
-
-\end{block}
-\end{textblock}
+%\begin{textblock}{38.0}(44,109)
+%\begin{block}{Acknowledgement}
+%\end{block}
+%\end{textblock}
 
 
 
